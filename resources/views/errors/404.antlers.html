@@ -1,0 +1,13 @@
+{{#
+    Modèle 404 par défaut de l'addon. Rendu automatiquement par Statamic quand la vue
+    `errors.404` existe. Le contenu se gère dans le CP (global « Pages d'erreur »).
+    Restylez librement pour coller à votre site (ce starter est autonome).
+#}}
+<section style="min-height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 24px;">
+    <div style="max-width:620px;">
+        {{ if errors:eyebrow }}<p style="text-transform:uppercase;letter-spacing:.2em;font-size:13px;opacity:.6;margin-bottom:12px;">{{ errors:eyebrow }}</p>{{ /if }}
+        {{ if errors:heading }}<h1 style="font-size:clamp(36px,7vw,64px);line-height:1.05;margin:0 0 16px;">{{ errors:heading }}</h1>{{ /if }}
+        {{ if errors:text }}<div style="font-size:18px;opacity:.75;margin:0 0 28px;">{{ errors:text }}</div>{{ /if }}
+        {{ if errors:home_label }}<a href="{{ site:url }}" style="display:inline-block;padding:14px 32px;background:#111;color:#fff;text-decoration:none;border-radius:6px;">{{ errors:home_label }}</a>{{ /if }}
+    </div>
+</section>

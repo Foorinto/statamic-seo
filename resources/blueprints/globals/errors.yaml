@@ -1,0 +1,19 @@
+title: "Pages d'erreur"
+tabs:
+  main:
+    display: 'Page 404'
+    sections:
+      -
+        fields:
+          -
+            handle: eyebrow
+            field: { type: text, display: Surtitre, default: 'Erreur 404', localizable: true }
+          -
+            handle: heading
+            field: { type: bard, display: Titre, localizable: true, save_html: true, inline: true, buttons: [bold, italic] }
+          -
+            handle: text
+            field: { type: bard, display: Message, localizable: true, save_html: true, buttons: [bold, italic, unorderedlist, orderedlist, anchor] }
+          -
+            handle: home_label
+            field: { type: text, display: 'Libellé du bouton retour', localizable: true }

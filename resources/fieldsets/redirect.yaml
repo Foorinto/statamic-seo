@@ -1,0 +1,10 @@
+title: Redirection
+fields:
+  -
+    handle: create_redirect
+    field:
+      type: toggle
+      display: 'Créer une redirection si le slug change'
+      instructions: "Activé : si vous modifiez le slug de cette page, l'ancienne URL sera automatiquement redirigée (301) vers la nouvelle. Évite les erreurs 404."
+      default: true
+      localizable: true

@@ -1,0 +1,44 @@
+title: 'Réseaux sociaux'
+fields:
+  -
+    handle: seo_social_preview
+    field:
+      type: seo_social_preview
+      display: 'Aperçu réseaux sociaux'
+      instructions: "Aperçu de la carte partagée sur Facebook, X/Twitter et LinkedIn. Se met à jour en direct."
+  # Par défaut un champ texte (portable, sans dépendance à un container).
+  # Pour un vrai sélecteur d'image, remplacer par :
+  #   type: assets, container: <votre_container>, max_files: 1, mode: grid
+  # et renseigner `assets_container` dans config/foorintodev-seo.php.
+  -
+    handle: seo_image
+    field:
+      type: text
+      display: 'Image de partage (Open Graph)'
+      instructions: "Chemin (ex. /assets/…/photo.webp) ou URL complète. Vide = image par défaut du site. Idéal 1200×630 px."
+      localizable: true
+  -
+    handle: og_title
+    field:
+      type: text
+      display: 'Titre pour les partages'
+      instructions: "Titre affiché sur les réseaux sociaux. Vide = reprend le titre SEO."
+      localizable: true
+  -
+    handle: og_description
+    field:
+      type: textarea
+      display: 'Description pour les partages'
+      instructions: "Texte affiché sous le titre sur les réseaux. Vide = reprend la meta description."
+      rows: 3
+      localizable: true
+  -
+    handle: twitter_card
+    field:
+      type: button_group
+      display: 'Format de carte Twitter/X'
+      instructions: "Grande image = photo pleine largeur. Vignette = petite image à gauche."
+      default: summary_large_image
+      options:
+        summary_large_image: 'Grande image'
+        summary: Vignette

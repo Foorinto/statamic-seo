@@ -1,0 +1,30 @@
+title: SEO
+fields:
+  -
+    handle: seo_google_preview
+    field:
+      type: seo_google_preview
+      display: 'Aperçu Google'
+      instructions: "Aperçu de votre page dans les résultats de recherche. Se met à jour en direct."
+  -
+    handle: seo_title
+    field:
+      type: text
+      display: 'Titre SEO'
+      instructions: "Titre affiché dans Google et lors des partages. Vide = titre de la page + nom du site. Idéal ~50-60 caractères."
+      localizable: true
+  -
+    handle: seo_description
+    field:
+      type: textarea
+      display: 'Meta description'
+      instructions: 'Résumé affiché sous le titre dans Google. Idéal ~150-160 caractères.'
+      rows: 3
+      localizable: true
+  -
+    handle: seo_noindex
+    field:
+      type: toggle
+      display: 'Masquer aux moteurs de recherche (noindex)'
+      instructions: "Activé : cette page est exclue de Google et des moteurs (balise robots noindex). À décocher le jour du lancement. Se règle page par page."
+      localizable: true

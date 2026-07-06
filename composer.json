@@ -1,0 +1,27 @@
+{
+    "name": "foorintodev/statamic-seo",
+    "description": "Addon SEO maison pour Statamic : meta, Open Graph, Twitter cards, canonical, robots/noindex et défauts de site. Multisite. Gratuit, sans licence.",
+    "type": "statamic-addon",
+    "version": "1.1.0",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Foorintodev\\Seo\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Foorintodev SEO",
+            "description": "Gestion SEO simple et multisite : meta, Open Graph, Twitter, robots/noindex, défauts de site."
+        },
+        "laravel": {
+            "providers": [
+                "Foorintodev\\Seo\\ServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "statamic/cms": "^6.0"
+    }
+}
